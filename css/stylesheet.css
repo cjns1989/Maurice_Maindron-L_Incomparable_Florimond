@@ -1,0 +1,148 @@
+@page {margin: 10px;}
+
+@font-face { font-family:"EB Garamond";    font-style:normal; font-weight:normal; src:url("../fonts/EBGaramond-Regular.otf"); }
+@font-face { font-family:"EB Garamond";    font-style:italic; font-weight:normal; src:url("../fonts/EBGaramond-Italic.otf"); }
+
+sup {
+  font-size: 0.675em;
+  line-height: 1.2;
+  vertical-align: super;
+  vertical-align: 35%;
+  }
+body {
+  font-family:"EB Garamond", serif;
+  line-height: 1.2;
+  margin-left:.5em;
+  margin-right:.5em;
+  }
+ol.toc li { 
+list-style-type: none; 
+margin: 0; 
+padding: 0; 
+  }
+h1 { 
+  text-align:center; 
+  margin-top:5em;
+  margin-bottom:3em;
+  font-variant: common-ligatures lining-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+h1.title { 
+  text-align:center; 
+  font-size:1.66em;
+  font-weight:bold;
+  padding-bottom:0em;
+  margin-bottom:0em;
+}
+h1.unnumbered { 
+  display:none;
+}
+h2 { 
+  text-align:center; 
+  margin-top:2em;
+  margin-bottom:2em;
+  font-variant: common-ligatures lining-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+p.subtitle { 
+  padding-top:0em;
+  padding-bottom:0em;
+  margin-top:.5em;
+  text-align:center; 
+  text-indent:0;
+  font-size:1.175em;
+  font-weight:bold;
+}
+p.author { 
+  padding-top:0em;
+  padding-bottom:0em;
+  margin-top:1em;
+  text-align:center; 
+  text-indent:0;
+  font-size:1.175em;
+  font-weight:bold;
+}
+p.date { 
+  text-align:center; 
+  text-indent:0;
+  margin-top:2.33em;
+  font-size:1.33em;
+  font-weight:bold;
+}
+p.pagebreak { 
+  page-break-after:always; 
+}
+p { 
+  text-indent:2em; 
+  text-align:justify; 
+  margin-top:0;
+  margin-bottom:0;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+ -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 2;
+  -ms-hyphenate-limit-chars: 6 3 2;
+  hyphenate-limit-chars: 6 3 2;
+  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-lines: 2;
+}
+p.ind { 
+  text-indent:0em; 
+  text-align:left; 
+  margin-left:3em;
+  margin-top:0em;
+  margin-bottom:0em;
+  font-size:smaller;
+  font-kerning: normal;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+p.center { 
+  text-indent:0em; 
+  text-align:center; 
+  margin:auto;
+  margin-top:1em;
+  margin-bottom:1em;
+  font-variant: common-ligatures oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+  adobe-hyphenate: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -epub-hyphens: none;
+  hyphens: none;
+}
+p.sc {
+ font-feature-settings:          "smcp" 1;
+  -webkit-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings:    "smcp" 1;
+  -ms-font-feature-settings:     "smcp" 1;
+ text-align:right;
+}
+div.center                          /* cf. pandoc --lua-filter */
+{
+  width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+div.right                           /* cf. pandoc --lua-filter */
+{
+  width:100%;
+  margin-left: 0;
+  text-align: right;
+}
+span.smallcaps {                   /* pandoc class="smallcaps" */
+  font-variant: small-caps; 
+} 
